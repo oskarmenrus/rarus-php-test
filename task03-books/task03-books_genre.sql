@@ -1,0 +1,1 @@
+SELECT title, authors FROM books WHERE genre LIKE '%Фантастика%';

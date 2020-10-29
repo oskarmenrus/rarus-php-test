@@ -1,0 +1,1 @@
+SELECT name, count(*) FROM authors GROUP BY name;
