@@ -5,7 +5,7 @@
   <title>Form</title>
 </head>
 <body>
- 	<form id="app" @submit="checkForm" class="obratnuj-zvonok" novalidate="true" autocomplete="off" action='main.php' method='post'>
+ 	<form id="app" @submit="checkForm" novalidate="true" autocomplete="off" action='main.php' method='post'>
  	
  	<p v-if="errors.length">
     	<b>Пожалуйста исправьте указанные ошибки:</b>
@@ -14,7 +14,7 @@
     	</ul>
 	</p>
 	
-	<div class="form-zvonok"> 
+	<div> 
 	 	<div>
 		<p>Комментарий:</p>
 		<p><textarea name="comment"></textarea></p>
@@ -24,7 +24,7 @@
 		<p><label for="tel">Телефон!: </label><input id="tel" v-model="tel" type="tel" name="tel" /></p>	
 		<p>Файл: <input type="file" /></p>	
 
-		<input class="bot-send-mail" type='submit' value='Отправить'>
+		<input type='submit' value='Отправить'>
 		</div>
 	</form>
 	
